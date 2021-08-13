@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  traefik:
+    image: "elft3r/sim-racing-events:latest"
+    ports:
+      - "4000"
+    healthcheck:
+      test: "wget --no-verbose --tries=1 --spider http://localhost:4000 || exit 1"
+      interval: 10s
+      timeout: 10s
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == worker
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+        failure_action: rollback
+      rollback_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+      restart_policy:
+        condition: on-failure
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.sim-racing-events.rule=Host(`sim-racing.events`)"
+        - "traefik.http.routers.sim-racing-events.tls=true"
+        - "traefik.http.routers.sim-racing-events.tls.certresolver=letsencrypt"
+        - "traefik.docker.network=traefik"
+        - "traefik.http.services.sim-racing-events.loadbalancer.server.port=4000"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
