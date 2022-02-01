@@ -1,6 +1,7 @@
 ---
 layout: splash
 author_profile: true
+permalink: /
 ---
 
 <div data-tockify-component="calendar" data-tockify-calendar="simracing.events"></div>

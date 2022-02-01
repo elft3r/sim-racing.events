@@ -1,0 +1,7 @@
+main:
+  - title: "Calendar"
+    url: /
+  - title: "Championships"
+    url: /championships
+  - title: "About"
+    url: /about
