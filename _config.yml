@@ -10,16 +10,16 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
+theme                    : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Sim-Racing Events"
+title                    : "sim-racing.events"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Sim-Racing.Events"
-description              : "An amazing website."
+subtitle                 : "Find the your favorite sim racing event and when it's happening"
+name                     : "sim-racing.events"
+description              : "The website with all the Sim Racing Events happening around the world."
 url                      : "https://sim-racing.events"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -128,15 +128,18 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jochen.zehnder@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/elft3r"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/elft3r/sim-racing.events"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
