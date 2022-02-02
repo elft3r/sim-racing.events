@@ -1,5 +1,6 @@
+<!-- markdownlint-disable MD041 -->
 ---
-layout: single
+layout: splash
 permalink: /
 ---
 

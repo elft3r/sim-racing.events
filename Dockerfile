@@ -1,5 +1,6 @@
 FROM elft3r/jekyll:latest
 
+# hadolint ignore=DL3008
 RUN apt-get update \
     && apt-get -y install --no-install-recommends wget \
     && apt-get clean \
