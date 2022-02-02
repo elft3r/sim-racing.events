@@ -1,7 +1,9 @@
 FROM elft3r/jekyll:latest
 
 RUN apt-get update \
-    && apt-get -y install wget
+    && apt-get -y install --no-install-recommends wget \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY . /srv/jekyll/
 RUN bundle install

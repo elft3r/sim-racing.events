@@ -1,10 +1,9 @@
 ---
-layout: splash
+layout: single
 title: Championships
 permalink: /championships/
 ---
 
-# Championships
 There are many championships and events happening in sim racing. All spread
 across various simulators and platforms. On this page, you find a list of the
 most famous events.

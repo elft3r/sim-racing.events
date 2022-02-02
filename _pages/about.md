@@ -1,10 +1,9 @@
 ---
-layout: splash
-author_profile: true
+layout: single
+title: About sim-racing.events
 permalink: /about
 ---
 
-# About {{ site.title }}
 There are many sim racing events happening around the world every week.
 Sometimes it gets hard to find the dates and details when these events are and
 what they are about. This page provides you with all the details about the
