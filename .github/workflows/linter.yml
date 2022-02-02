@@ -50,4 +50,3 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DOCKERFILE_HADOLINT_FILE_NAME: ${{ env.GITHUB_WORKSPACE }}/.github/workflows/.config/hadolint.yaml
