@@ -1,6 +1,7 @@
 FROM elft3r/jekyll:latest
 
-RUN apt -y install wget
+RUN apt-get update \
+    && apt-get -y install wget
 
 COPY . /srv/jekyll/
 RUN bundle install
