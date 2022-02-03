@@ -30,3 +30,6 @@ most famous events.
 ## RaceRoom
 * [DTM Esports Championship powered by MediaMarkt](https://www.dtm.com/de/dtm-esports-championship)
 * [ADAC GT Masters eSports Championship powered by EnBW mobility+](https://www.adac-motorsport.de/adac-esports)
+
+## F1
+* [F1 Esports Series](https://f1esports.com)
