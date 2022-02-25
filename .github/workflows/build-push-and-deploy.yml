@@ -1,5 +1,5 @@
 ---
-name: Build and Push Image
+name: Build, Push and Deploy
 
 on:
   pull_request:
@@ -67,3 +67,13 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.docker_meta.outputs.tags }}
           labels: ${{ steps.docker_meta.outputs.labels }}
+
+  deploy:
+    name: Deploy Monitoring Stack
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Deploy Monitoring Stack
+        run: |
+          docker stack deploy -c monitoring/monitoring-stack.yml monitoring
