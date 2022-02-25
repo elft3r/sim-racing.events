@@ -69,11 +69,12 @@ jobs:
           labels: ${{ steps.docker_meta.outputs.labels }}
 
   deploy:
-    name: Deploy Monitoring Stack
+    name: Deploy sim-racing.events Stack
+    needs: build-and-push-image
     runs-on: self-hosted
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Deploy Monitoring Stack
+      - name: Deploy sim-racing.events Stack
         run: |
-          docker stack deploy -c monitoring/monitoring-stack.yml monitoring
+          docker stack deploy -c jekyll-stack.yml sim-racing-events
