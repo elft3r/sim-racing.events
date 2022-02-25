@@ -21,6 +21,7 @@ most famous events.
 * [VRS SCO Sprint Challenge](https://challenge.sportscaropen.com)
 * [SCO VRS 24h of Spa](https://24h.sportscaropen.com)
 * [SCO Endurance Series](https://endurance.sportscaropen.com)
+* [Digitale Nürburgring Langstrecken-Serie](https://www.nuerburgring-langstrecken-serie.de/de/digitale-nuerburgring-langstrecken-serie/)
 
 ## rFactor 2
 * [Le Mans Virtual Series](https://lemansvirtual.com)
